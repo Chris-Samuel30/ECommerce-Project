@@ -1,0 +1,82 @@
+.showcaseproduct{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:white;
+
+    &__info {
+        padding-bottom:20px;
+        padding-left:10px;
+    }
+
+    &__title {
+        padding-top:50px;
+        padding-bottom:20px;
+    }
+
+    &__price {
+        padding-top:30px;
+        font-size:16px;
+        border-bottom:1px solid lightgray;
+        padding-bottom:15px;
+    }
+
+    &__image {
+        padding-top:10px;
+        padding-bottom:20px;
+        height:400px;
+        object-fit:contain;
+        align-items:center;
+    }
+
+    &__button {
+        background:#f0c14b;
+        border-radius:6px;
+        border:1px solid;
+        margin-top:auto; //This pushes the button to the bottom of the container
+        border-color: #a88734 #9c7e31 #846a29;
+        color:#111;
+        width:150px;
+        margin-bottom:10px;
+        transition:0.3s;
+
+        &:hover {
+            background-color:darken(#f0c14b, 10);
+            cursor:pointer;
+            transform:scale(1.01)
+        }
+
+        &__wrap {
+            display:flex;
+            justify-content:center;
+            text-align:center;
+        }
+    }
+
+    &__icon {
+        color:yellow;
+    }
+
+    &__rating {
+        padding-bottom:15px;
+        display:flex;
+        border-bottom:1px solid lightgray;
+    }
+
+    &__action {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        padding:5px;
+        margin-bottom:20px;
+        margin-top:20px;
+        border:1px solid lightgray;
+        width:20%;
+        height:100px;
+
+        &>h3{
+            align-items:flex-start;
+            justify-content:flex-start;
+            color:darkred;
+        }
+    }
+}
