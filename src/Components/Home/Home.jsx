@@ -24,7 +24,7 @@ const Home = () => {
     return (
         <div className={styles.home}>
             <div className={styles.home__container}>
-                <Carousel showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true} interval={8000} transitionTime={1500}>
+                <Carousel showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={1000}>
                     <div>
                     <img className={styles.home__banner} src={PS5}/>
                     </div>

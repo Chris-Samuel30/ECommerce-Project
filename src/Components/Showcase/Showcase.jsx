@@ -21,8 +21,8 @@ const Showcase = () => {
 
     return (
         <div>
-            {showcase.map(({id, title, price, image, rating}) => (
-                    <ShowcaseProduct id={id} title={title} price={price} image={image} rating={rating}/>
+            {showcase.map(({id, title, price, image, rating, description}) => (
+                    <ShowcaseProduct id={id} title={title} price={price} image={image} rating={rating} description={description}/>
                 ))}
         </div>
     )

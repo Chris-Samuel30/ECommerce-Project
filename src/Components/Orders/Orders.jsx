@@ -22,7 +22,7 @@ const Orders = () => {
     },[])
     return (
         <div className={styles.orders}>
-            <h1>Your Orders</h1>
+            <h1>Orders</h1>
             <div className={styles.orders__ordersummary}>
             {orders?.map(order => (
                <Order order={order}/> 

@@ -18,6 +18,8 @@ const Login = () => {
         console.log(user);
         if(user){
             history.push('/')
+        } else if (!user) {
+            alert("Please sign in to place an order")
         }
 
     }

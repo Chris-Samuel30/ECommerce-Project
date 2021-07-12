@@ -3,7 +3,7 @@ import styles from './ShowcaseProduct.module.scss';
 import StarIcon from '@material-ui/icons/Star';
 import {useStateValue} from '../../Services/StateProvider';
 
-const ShowcaseProduct = ({id, title, image, price, rating}) => {
+const ShowcaseProduct = ({id, title, image, price, rating,description}) => {
 
     const[{basket}, dispatch] = useStateValue();
 
@@ -38,6 +38,7 @@ const ShowcaseProduct = ({id, title, image, price, rating}) => {
                 <small>$</small>
                 <strong>{price}</strong>
                 </p>
+                <p>{description}</p>
             </div>
             <div className={styles.showcaseproduct__action}>
                 <h3><small>$</small>{price}</h3>

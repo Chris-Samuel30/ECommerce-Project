@@ -30,6 +30,9 @@
     &:nth-child(6n) {
         grid-column:span 1;
     }
+    &:nth-child(7n) {
+        grid-column:span 4;
+    }
 
     &__info {
         margin-bottom:15px;
